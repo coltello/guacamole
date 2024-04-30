@@ -1,7 +1,7 @@
 ARG ALPINE_BASE_IMAGE=latest
 FROM alpine:${ALPINE_BASE_IMAGE} AS builder
 
-ARG VERSION="1.5.4"
+ARG VERSION="1.5.5"
 ARG TARGETPLATFORM
 
 ENV \
@@ -180,7 +180,7 @@ ENV \
   GUACAMOLE_HOME=/app/guacamole \
   CATALINA_HOME=/opt/tomcat \
   PG_MAJOR=13 \
-  TOMCAT_VER=9.0.83 \
+  TOMCAT_VER=9.0.88 \
   PGDATA=/config/postgres \
   POSTGRES_USER=guacamole \
   POSTGRES_DB=guacamole_db \
